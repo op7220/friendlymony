@@ -1,0 +1,297 @@
+==================================06/05/2020 apple support reference id=======Your case ID is 101081376590.=====================
+
+1 Done) When we try to sign up with Facebook, in the Facebook permission screen,
+  the FriendlyMony's Privacy policy and Terms links need proper redirections;
+  currently it incorrect. screenshot attached Please redirect it accordingly to :
+
+  Privacy Policy: https://friendlymony.com/privacypolicy.html
+  Terms: https://friendlymony.com/terms.html
+
+2 Pending (old issue)) The App is Crashing in Android v 4.4.2 for any type of login
+    viz; FB, Gamil or Apple Id login. screenshot attached.
+
+3 Done) In the App Dashboard, please redirect the Privacy policy and Terms of use to the following URLs :
+    Privacy Policy: https://friendlymony.com/privacypolicy.html
+    Terms of use: https://friendlymony.com/terms.html
+
+4 Done) In the App account settings screen, please change the URLs of  About us  Privacy policy , Terms of use etc. as :
+
+   About us :https://friendlymony.com/aboutus.html
+  Privacy Policy: https://friendlymony.com/privacypolicy.html
+ Terms of use: https://friendlymony.com/terms.html
+
+5 Web) When we create new accounts, in the matching profile feeds, this account appears 3 to 4 times and if this person expresses interest
+     interest then in her 'Who liked my profile' screen again appear multiple no. of times.
+
+   Say Create an account 'A' male interested in Female and then another account 'B' Female interested in Male.
+   Then if we login to A's account then the B's profile appears more than once in his feed.  Again, if A expresses
+    interest in B's profile then under the B's profile 'Who liked me' the profile of 'A' appears multiple no. of times.
+
+  For any type of account, It should create only one profile and hence should appear only once in its matching Feeds.
+
+6 Done) In the profile details screen, there is ' Start Chatting'  This 'Start chatting' option should not appear there. We should display
+     the 'X', Smile/Crush' and 'Heart' icons as it appears in the by default screen of the profile in the feed.  screenshot aattached.
+
+    ( Chatting is possible ONLY WHEN say A expresses interest/ or Send Crushes and B accepts that Interest or Crushes. In this
+     conditions, it will be a " Match" and since match is established then they can chat/video call etc.  UNTILL and UNLESS
+     Expression of Interest is accepted or Crushes is accepted, they can't  CHAT or VIdeo Call ).
+
+7 Done) When we Sign up with Apple ID, we should auto fille the First Name, Last name and Email Id of the user in the Sign up
+    screen as we already have these info from the Apple API. Currently all these fields appear blank and the user has to manually
+    fill them all over again. screenshot attached.
+
+8 Discuss with client) In the Apple Signup/Login screen, if we tap on the " Forgot your Apple ID or Password?"  or ' See How Your data is managed..."
+    then it does not respond. screenshot attached.
+
+9 Done) Tap on ' Continue with Apple' then tap on the Back button of the device to come out of this screen ;
+     then instead of taking to the Dashboard of the App, it shows a BLANK screen and if we again Tap on the Back
+     button on the device then only it shows the Dashboard/ login screen of the App.
+     ( On the First tapping of the Back button of the device should show the Dashboard/ Login screen)
+
+10 Done) While trying to Sign up/ login with Apple ID, in the next screen, "Do you want to continue using..."
+      in this screen if we tap on the 'Cancel' button then it shows a BLANK screen and we have to tap again on the Back
+     icon to go to the Dashboard of the App.  screenshot attached.
+     ( On Tapping on ' Cancel' it should directly take us to the Dashboard/Login screen of the App)
+
+11 Web) After creating and account with Apple Id, if we logout of the Account and then try to login again
+      then instead of logging into the Account, it again shows the Sign up screen as if no such account exists in DB
+      BUT this created account gets recorded in the Admin panel.
+
+12 Web) In the Admin panel, for the account created using  Apple ID , it gets recorded in the Admin panel
+       under the ' Networking Type' as Mobile number. It should get recorded as ' Apple ID'.
+
+13 Web) For any type of account created, using FB, Gmail or Apple ID, in the Admin panel the profile pictures DO NOT Appear.
+      In the Admin panel, it should appear under the Edit section the user. ( Eg; http://3.15.38.50/admin/admin/users/442/edit)
+
+14 Web) The blocking of the user does not work as expected.
+      Say when  'A' blocks ' B' from his feed then 'B' continues to appear on ' A's ' Feed.
+      (here, we should immediately remove the profile of B from the feeds of A's ).
+      Now Again, under the B's feed , the profile of A still continues to appear asusual.
+      (here since A has already blocked him, the profile of A should not appear at all under B feeds).
+
+15 Done) When we try to report to the Admin to block a user, the UI/UX should be similar to the Woo App as
+      screenshot attached. ( Should show all the options in the screen by default with radio button option
+      to select any one of these options. ' Other' field should also be available so that he can write his own reason
+      for blocking the account.
+
+16 Web) Similarly to Blocking an User ,
+      say if A reports about B to the Admin to block him then B should immediately disappear/ get hidden from the feed of A
+      and in the feed of B, the profile of A should not appear at all.
+      (currently, even when A reports to Admin to Block B , his profile continues to appear in his feed and
+        in the feed of B the profile of A still appears )
+
+17 Web) In the Admin panel, (http://3.15.38.50/admin/admin/userReports)
+
+       we should also record the user id of the user with HYPERLINK about whom the report is received so
+        that the Admin can quickly check his profile details and types of photos uploaded. It will help him
+        in deciding whether to block the user or not depending upon the profile description and uploaded photos.
+        ( At present there is no way in helping him to understand the issue).
+
+       Also, all the new reported users should appear on top in the Admin panel ( latest should appear on top and older below it.)
+
+       Badge Icon for the UNREAD Messages on the USER REPORT heading. screenshot attached.
+
+18 Web) From the Admin panel, when the Admin BLOCKS the user then also he is able to login to his account as usual.
+      He should not be allowed to login to his account and his profile MUST be hidden on the entire platform/ App.
+
+     Say when he tries to login to his account, in the DASHBOARD we need to display the message:
+      " Your account has been blocked for Terms violations. Please contact support@friendlymony.com"
+         This email id should be hyperlink so that user can compose mail and sends the request for review of the account.
+
+      Say if he is in logged in state in the App and if the Admin blocks him then HE MUST BE LOGGED out automatically and
+      if he tries to login again then we should display the above message.
+
+    And once the Admin UNBLOCKS his account then his profile should be again visible on the entire platform and he should
+    be able to use the platform as usaul like any other normal user.
+
+   ( Currently BLOCKING itself does not work).
+
+
+19 Web) Both Boosts and Crushes DO NOT have any expiry date and hence their payment is one time and NOT based on subscription
+      as currently displayed in the plan. screenshot attached.
+
+      It should be INR 75.25 instead of INR 75.25/mo , INR 227.27 instead of INR 27.27/mo  etc.
+      similarly for Boosts , it should be INR 379.29 instead of INR 379.29/mo , INR 759.37 instead of 759.34/mo etc.
+
+20 New) In the payment screen, on entering the CC number it is not detecting the type of card ( Visa / Master/ American Express etc.)
+
+22 New) In the payment screen, we should show the total amount that is going to be charged in this screen before processing the payment
+      for any type of payment ( Boost buy, Crushes buy or any subscription buy).
+     Screenshot of an App (Meravyaah) is attached for your referennce. This App has Stripe payment gateway.
+      You can download the App from the PlayStore and check.
+
+23 New) Payment method showing currently ONLY USING CREDIT CARD, it should show options for
+      Debit Card, Netbanking  Paytm etc.
+
+24 New) We need to check the various payment methods by changing the country locations
+      Say for US , it should show payment using  CC / DB card, Netbanking , Apple Pay etc.
+
+
+25 Web) After creating an account even without buying any BOOSTS or when there is no BOOSTS available then also
+      if we tap on the ' Boost Now'  then it displays 'Your profile will be boosted for 60 minutes'. (though it does not boosts it.)
+      Since there is no BOOSTS available in his account, it should display message like
+       " You do not have Boosts available. Please buy to Boost your profile"
+
+26 Web) When we buy CRUSHES, though it shows the success message in the App but it fails to record in the Admin panel
+      under the ' Crush Report' section and under the ' User Management' section.
+       Under the user management section , it should show the total no. of Crushes bought, Spent and Left which is yet to be used. screen shot attached.
+
+27 Web) When we buy BOOSTS, though it shows the success message in the App but it fails to record in the Admin panel
+      under the ' Boost Report' section and under the ' User Management' section.
+       Under the user management section , it should show the total no. of Boosts bought, Spent and Left which is yet to be used. screen shot attached.
+
+28 Web) Unable to buy 50 BOOSTS ,as in the payment gateway screen, it shows invalid integer.
+
+29 Web) Even with incorrect expiry date of CC and incorrect CVV number, we are able to buy BOOSTS and CRUSHES.
+      there is no validity check of the CC and hence it processes the request as success.
+
+30 Done) In the payments screen , instead of ' Subscription Payment' , we should simply mention its heading as ' Payment details'.
+
+31 Web) Subscription plans means that just before the expiry of his current subscription plan 1 month/3months/6 months/12 months ,
+      his CC/ Debit card etc. would be automatically charged and his subscription is auto-renewed.
+      Hence, accordingly his account expiry date in the Admin panel under the user management section should updated automatically.
+      Incase if his CC has expired OR he has Off the Auto-renewal option then it should reflect in the Admin panel accordingly.
+      And once he becomes a FREE member ....he can't chat or make video call. This check needs to be provided so that
+      a user once a paid member and then if he becomes a free men=ber after that then we should not allow him to Chat/ Video call.
+
+32 Web) For the subscription plans ( 1 month/ 3 month/6 months and 12 months ), it fails to record it in the Admin panel under the ' Subscription Report'.
+      It should record all the details similar to already present under it for the earlier users.
+
+33 Web and mobile) When we subscribe for a plan say for 1 month , we should be able to buy again either 1 month plan or 3 months or 6 month or 12 months plan
+     and the validy of the account should be as expected BUT  say after buying a 3 months plan we should not allow to buy 1 month plan
+     ie; for for a subscriber with higher plan if he tries to subscribe to lower plan , we SHOULD NOT ALLOW and display message like
+     " Please subscribe to  higher plan"
+    similarly say if 1 has a subscription of 12 months plan then he cannot subscribe to either 1 month /3 months or 6 months plan as all these plans are lower than
+     12 months plan.
+
+      ( Currently since it allows to subscribe from higher plan to lower plan , hence the expiry date shows incorrectly in the Admin panel under EXPIRY DATE of user management         section)
+
+34 New) Say today I created an account (14/4/2020) then it has a free validity of 7 days can fo up to 14 days incase if he has referred at least 5 users.
+      Now, consider that he has a free validity of 7 days...then his account is valid till 20/4/2020.
+      Now , if he subscribes today (14/4/2020) then his account should be valid till 19/5/2020  (7 days free + 30 days )
+
+      Incase if he subscribe for 1 month plan after his 7 days free trial period say on 25/4/2020, then his account will be valid till 24/5/2020 (30 days because he has already
+       used his free trial period and subscribed after his trial period)
+
+     Similarly for all other plans 3 months, 6 months and 12 months  ...we need to Add 90 days /180 days and 365 days resp. from the day of subscription if it has
+     been subscribed after the 7 days trial period OR no. of  free days left + 90/180/365 days etc...
+
+35 Done) The Application Crashes if we try to Subscribe for 3 months or 6 months or 12 months plan.
+
+36 Done) Say if I subscribe for a 3 months plan then the rate is INR 378.96/month
+      so the total amount charged  should be INR 378.96*3=INR 1136.88
+       but it charges only INR 378.96 .....ie; its not calculating the total no. of months in that subscription.
+
+      All these total calculated amounts should appear in the payment details screen before the amount is  CC is charged / processed successfully.
+
+     Similarly, for the other plans, it should calculate the total no. of months in the plan and then charge accordingly.
+      Eg : say for 3 months @100  should be INR 100*3=INR 300
+                         6 months @90   should be  INR 90*6 = INR 540
+                         12 month @80   should be INR 80*12 = INR 960   etc.
+
+37 Web) In the App also, in the subscription screen say for a 3 months plan , screennshot attached.
+ it shows the validity/ My Plan as 91 days and paid amount as INR 378.96
+ It should show the validity  as 90 days and paid amount as INR 1136.88  (378.96*3=1136.88)
+
+
+Note : I have not checked the Chat /video call / Online status etc. and related features as the App in the other device is Crashing.
+           Conditional cases like making the account created as backdate , by making an account expired / Cancelled /off the Auto-renewal etc.
+           we can test once these issues are fixed and we are available at the same time so that DB dates can be changed and tested various conditions.
+
+
+           ==================================Discuss with client==========================================
+           7) When we Sign up with Apple ID, we should auto fille the First Name, Last name and Email Id of the user in the Sign up
+               screen as we already have these info from the Apple API. Currently all these fields appear blank and the user has to manually
+               fill them all over again. screenshot attached.(As per apple policy they share firstname,lastname and email only first time and after other time
+               they share only apple id and client secret key)
+
+           8) In the Apple Signup/Login screen, if we tap on the " Forgot your Apple ID or Password?"  or ' See How Your data is managed..."
+               then it does not respond. screenshot attached.(This is webview and this webpage is apple so can't do on it.
+
+
+               =========================================================================24-04-2020=======================================================================================
+
+               1) In the profile details screen, the X , Crush Icon and Heart icon , on tapping on any of these , it shows ' Start chatting'
+                   It should be like on tapping X...Rejected
+                                                  tapping Crush icon ....Crush sent successfully
+                                                  tapping on Heart icon...You have expressed your Interest successfully.
+
+
+               Now, it simply displays the messages like 'sent successfully' but in fact it does not sent either Express Interest  (on tapping on Heart)
+               OR Crush ( on tapping on Smiley Heart).
+               Also, the messages should be ' Crush sent successfully' and ' You have expressed your Interest successfully'
+
+               2) After Sign up with Apple ID, if we logout and then try to re-login then it again shows the Sign up screen.
+                   (Though in the DB the account has been created successfully)
+
+               3)   There is no Badge icon for the UNREAD/NEW Report Abuse in the Admin panel
+                  (Badge Icon for the UNREAD Messages on the FLAGGING heading.).
+
+               4)In the App setting screen, under My Plan , instead of showing as 37 days , 365days etc.
+                   we should show as ' 1 Month' , ' 3 Months' , ' 6 Months' etc.  with the current  validity date of the account mentioned just below it.
+                   screenshot attached.  Please mention the account validity like : "Valid Till: 23/04/2020 "
+
+               5) NEED TO CHECK THIS CASE AT LAST :
+                  Subscription plans means that just before the expiry of his current subscription plan 1 month/3months/6 months/12 months ,
+                     his CC/ Debit card etc. would be automatically charged and his subscription is auto-renewed.
+                     Hence, accordingly his account expiry date in the Admin panel under the user management section should updated automatically.
+                     Incase if his CC has expired OR he has Off the Auto-renewal option then it should reflect in the Admin panel accordingly.
+                     And once he becomes a FREE member ....he can't chat or make video call. This check needs to be provided so that
+                     a user once a paid member and then if he becomes a free men=ber after that then we should not allow him to Chat/ Video call.
+
+               6) Auto-Renewal ON/OFF case not checked ; will test it when we are available at the same time so that we can change the
+                     dates in DB and test.
+
+               7) In the Admin Panel. Dashboard : http://3.15.38.50/admin/admin/home
+                      Here , the count for no. of Androif users, Male users , Female users , Total no. of users DO NOT appear correctly. ( count mismatch).
+
+                     Also, the Monthly Income is not correctly displayed. It should be the sum of all the Crushes, Boosts and Plans sold during the month.
+
+               8) In the Crush Report, the lastest crush sold should appear on top and older after that.
+
+
+               9)On Reporting Abuse. The message, ' Report added successfully' should be replaced with
+                      "Thank you for reporting Abuse. It will be reviewed by the Moderator and appropriate action will be taken within the next 24 hours."
+
+                       This is FIXED.But instead of showing the above message for 2 to 3 sec. we should show a prompt
+                      so that the user gets more time to read it properly. In that prompt 'OK' should be available and on tapping
+                      OK in that prompt, the prompt message should minimize. Applicable for both Android and iOS.
+
+                10) Online Status color should appear Dark Blue in both the Apps in all the relevant places.
+
+                    Please change it to Green Color/ Grapes color.
+
+
+               11)6) When we try to Report Abuse to the Admin by selecting the ' Other' option
+                  to write something in the text field, the text field gets hidden and the UI does not appear
+                  correctly. screenshot attached.
+                Also, when we select 'Other' and then without wrting anyting in the text field if we try to report
+               then it shows incorrect message. " Please select Report reason type"
+
+               we should show the message as :  "Please explain your reason for reporting"
+
+               12) Either in the Chat Screen or in Matches screen, it is not showing the Online Status.
+                     ( Onine Status should be in Green color/ Grapes color )
+
+               13) In the Menu ...' CHAT ' badge icon for the unread messages/ Received messages  DO NOT  appear.
+
+               14) When we share location, we should send just the map and not the entire address with latitude and longitude.
+
+
+               15) In the one to one chat screen, the background color of the text should be Blue and Orange.
+                     Right Side (Blue)....this is for sent messages background.
+                     Left Side (Orange)... this is for the received messages Background.  screenshot attached.
+
+               16) In the messages screen, (where all the messages from the different users is available),
+                     only one line of the text should appear along with TIME STAMP
+                     If instead of text, the message is Photo then Photo icon should appear.
+                     ( Please check WhatsApp for more on this)
+
+               17) All Unread messages under the Messages screen should appear with Badge and when the messages
+                      is read then the badge icon should disappear.
+
+               18) In the chat screen, the previously type words for faster typing should appear just above the keyboard.
+                     screenshot attached.
+
+
+                      Please check and let me know in case of any doubts.

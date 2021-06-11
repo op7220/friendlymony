@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.GetUserLocationActivity">
+
+
+    <fragment
+        android:id="@+id/agl_googleMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/agl_rlDetail" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/agl_rlDetail">
+
+        <ImageButton
+            android:id="@+id/agl_ibCurrentPosition"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_map_pointer"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/agl_rlDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_transparent_50">
+
+        <TextView
+            android:id="@+id/agl_tvStoreAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:layout_toStartOf="@+id/agl_btShare"
+            android:maxLines="5"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/agl_btShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_alignParentEnd="true"
+            android:text="Share"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

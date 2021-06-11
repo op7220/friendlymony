@@ -1,0 +1,161 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found: FriendlyMony (5BL8XN7JBA.com.friendlyMony)
+        abortOnError false
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('keystore.jks')
+            storePassword 'nect@123'
+            keyAlias = 'nect@123'
+            keyPassword 'nect@123'
+        }
+        debug {
+            storeFile file('keystore.jks')
+            storePassword 'nect@123'
+            keyAlias = 'nect@123'
+            keyPassword 'nect@123'
+        }
+    }
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.nect.friendlymony"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 10
+        multiDexEnabled true
+        versionName "1.0.7"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //PushNotificationSender and menifesh  DEvlopent to PRODUCTION
+
+        manifestPlaceholders = [
+                onesignal_app_id               : 'a810a9aa-0141-468e-9bba-9f45de5f804e',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+
+    implementation 'com.google.android.material:material:1.1.0'
+
+
+    /*retrofit for api */
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation "com.squareup.retrofit2:converter-jackson:2.4.0"
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+
+    compileOnly 'org.glassfish:javax.annotation:10.0-b28'
+
+    //dimension
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+
+    //image loder
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+    /*ButterKnife*/
+    implementation "com.jakewharton:butterknife:10.1.0"
+    annotationProcessor "com.jakewharton:butterknife-compiler:10.1.0"
+
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    implementation 'com.facebook.android:account-kit-sdk:4.23.0'
+
+//ciclr image
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+
+    //implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+
+    /*Shared preference library*/
+    implementation 'com.orhanobut:hawk:2.0.1'
+
+    //country picker
+    implementation 'com.github.joielechong:countrycodepicker:2.3.3'
+
+    //rangebar
+    implementation 'com.crystal:crystalrangeseekbar:1.1.3'
+
+    //imagepicker
+    implementation 'com.github.esafirm.android-image-picker:imagepicker:1.13.0'
+    implementation project(':cardstackview')
+
+    implementation 'com.google.firebase:firebase-analytics:17.2.3'
+    implementation 'com.google.firebase:firebase-messaging:20.2.1'
+    implementation 'com.google.firebase:firebase-core:17.2.3'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'com.google.firebase:firebase-firestore:21.4.1'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.android.libraries.places:places:2.0.0'
+
+    implementation "androidx.viewpager:viewpager:1.0.0"
+
+//image cmnpress
+    implementation 'id.zelory:compressor:2.1.0'
+
+    //Quickblox
+    implementation "com.quickblox:quickblox-android-sdk-videochat-webrtc:3.9.1"
+    implementation "com.quickblox:quickblox-android-sdk-messages:3.9.1"
+
+    implementation "com.navercorp.pulltorefresh:library:3.2.3@aar"
+
+    implementation "com.google.android.material:material:1.0.0"
+
+    //razorpay
+    implementation 'com.razorpay:checkout:1.5.12'
+    implementation 'com.google.firebase:firebase-auth:19.3.0'
+
+    //Get Notifications in chinese devices
+    implementation 'com.github.judemanutd:autostarter:1.0.8'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+
+    implementation 'com.google.firebase:firebase-messaging-directboot:20.2.3'
+
+    //WebView
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+
+    implementation 'com.hbb20:ccp:2.2.9'
+}
+repositories {
+    jcenter()
+    mavenCentral()
+}

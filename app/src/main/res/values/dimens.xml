@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Font-->
+    <dimen name="font_size_very_small">@dimen/_9sdp</dimen>
+    <dimen name="font_size_small">@dimen/_11sdp</dimen>
+    <dimen name="font_size_medium">@dimen/_13sdp</dimen>
+    <dimen name="font_size_large">@dimen/_15sdp</dimen>
+    <dimen name="font_size_extra_large">@dimen/_17sdp</dimen>
+    <dimen name="font_size_empty_view">@dimen/_20sdp</dimen>
+    <dimen name="font_size_alert">@dimen/_7sdp</dimen>
+    <dimen name="font_size_toolbar">@dimen/_17sdp</dimen>
+    <dimen name="font_size_graph">@dimen/_5sdp</dimen>
+    <dimen name="font_size_graph_small">@dimen/_3sdp</dimen>
+
+    <dimen name="margin_all">@dimen/_15sdp</dimen>
+    <dimen name="bottombar_img">@dimen/_30sdp</dimen>
+    <dimen name="bottombar_padding">@dimen/_8sdp</dimen>
+    <dimen name="bottombar_text">@dimen/_10sdp</dimen>
+
+
+    <dimen name="space_1dp">@dimen/_1sdp</dimen>
+    <color name="grey_transparent_50">#50606060</color>
+
+    <dimen name="pager_image_width">400dp</dimen>
+    <dimen name="pager_image_height">500dp</dimen>
+
+    <dimen name="bt_margin">8dp</dimen>
+    <dimen name="bt_edit_text_icon_padding">24dp</dimen>
+    <dimen name="bt_no_edit_text_icon_padding">49dp</dimen>
+    <dimen name="bt_mobile_number_explanation_padding">53dp</dimen>
+    <dimen name="bt_input_text_size">16sp</dimen>
+    <dimen name="bt_expiration_date_item_text_size">16sp</dimen>
+
+    <dimen name="bt_expiration_date_sheet_height">260dp</dimen>
+    <dimen name="bt_expiration_date_sheet_left_right_margin">8dp</dimen>
+    <dimen name="bt_expiration_date_sheet_top_bottom_margin">8dp</dimen>
+    <dimen name="bt_expiration_date_sheet_label_padding_top">8dp</dimen>
+    <dimen name="bt_expiration_date_sheet_label_padding_bottom">8dp</dimen>
+    <dimen name="bt_expiration_date_item_selected_background_radius">2dp</dimen>
+
+    <dimen name="bt_save_card_checkbox_left_margin">-7dp</dimen>
+
+</resources>

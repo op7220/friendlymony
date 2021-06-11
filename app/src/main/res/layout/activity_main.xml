@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_5sdp">
+
+
+        <FrameLayout
+            android:id="@+id/frame_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llFooter" />
+
+        <LinearLayout
+            android:id="@+id/llFooter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/llExplore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/vwExplore"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@drawable/bg_gradient_horizontal_rounded" />
+
+                <ImageView
+                    android:id="@+id/ivExplore"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottombar_img"
+                    android:padding="@dimen/bottombar_padding"
+                    android:src="@drawable/ic_explore_active" />
+
+                <TextView
+                    android:id="@+id/tvExplore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EXPLORE"
+                    android:textColor="@color/grey_text"
+                    android:textSize="@dimen/bottombar_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMathes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/vwMathes"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@drawable/bg_gradient_horizontal_rounded"
+                    android:visibility="invisible"></View>
+
+                <ImageView
+                    android:id="@+id/ivMathes"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottombar_img"
+                    android:padding="@dimen/bottombar_padding"
+                    android:src="@drawable/ic_matches" />
+
+                <TextView
+                    android:id="@+id/tvMathes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MATCHES"
+                    android:textColor="@color/grey_text"
+                    android:textSize="@dimen/bottombar_text" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/am_tvCount"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/shape_oval_green"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/llChat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/vwChat"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:background="@drawable/bg_gradient_horizontal_rounded"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/ivChat"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bottombar_img"
+                        android:padding="@dimen/bottombar_padding"
+                        android:src="@drawable/ic_chat" />
+
+                    <TextView
+                        android:id="@+id/tvChat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHAT"
+                        android:textColor="@color/grey_text"
+                        android:textSize="@dimen/bottombar_text" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llUpgrade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/vwUpgrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@drawable/bg_gradient_horizontal_rounded"
+                    android:visibility="invisible"></View>
+
+                <ImageView
+                    android:id="@+id/ivUpgrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottombar_img"
+                    android:padding="@dimen/bottombar_padding"
+                    android:src="@drawable/ic_profile" />
+
+                <TextView
+                    android:id="@+id/tvUpgrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPGRADE"
+                    android:textColor="@color/grey_text"
+                    android:textSize="@dimen/bottombar_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSetting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/vwSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@drawable/bg_gradient_horizontal_rounded"
+                    android:visibility="invisible"></View>
+
+                <ImageView
+                    android:id="@+id/ivSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottombar_img"
+                    android:padding="@dimen/bottombar_padding"
+                    android:src="@drawable/ic_profile" />
+
+                <TextView
+                    android:id="@+id/tvSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SETTINGS"
+                    android:textColor="@color/grey_text"
+                    android:textSize="@dimen/bottombar_text" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<com.rilixtech.CountryCodePicker
+            android:id="@+id/ccPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pink"
+            android:padding="@dimen/_8sdp"
+            android:visibility="gone"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_autoDetectLanguage="true"
+            app:ccp_autoFormatNumber="true"
+            app:ccp_contentColor="@color/black"
+            app:ccp_defaultNameCode="US"
+            app:ccp_showArrow="true"
+            app:ccp_showFlag="true"
+            app:ccp_showNameCode="false"
+            app:ccp_showPhoneCode="true"
+            app:ccp_textColor="@color/grey_text"
+            app:ccp_textSize="@dimen/font_size_medium" />-->
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/amn_ccpCountryCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:visibility="gone"
+            app:ccpDialog_keyboardAutoPopup="false"
+            app:ccpDialog_textColor="@color/black"
+            app:ccp_arrowColor="@color/white"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_autoDetectLanguage="true"
+            app:ccp_autoFormatNumber="true"
+            app:ccp_contentColor="@color/white"
+            app:ccp_defaultNameCode="US"
+            app:ccp_showArrow="true"
+            app:ccp_showFlag="false"
+            app:ccp_showNameCode="false"
+            app:ccp_showPhoneCode="true" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

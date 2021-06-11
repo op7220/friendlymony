@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragments.home.SettingsFragment">
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient_horizontal_rounded"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Settings"
+            android:textColor="@color/grey_textDark"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Version 1.0.0"
+            android:textSize="@dimen/font_size_medium"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp">
+
+
+            <LinearLayout
+                android:id="@+id/llProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_profile_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Profile"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSubcription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_subscription_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Subcriptions"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBoost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_boost_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Boosts &amp; Crushes"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llReferral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_referral_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Refer"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llReferralUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_profile_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Users signed up using your Referral"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_share_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Share this App"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llWhoLiked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_referral_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Who liked your profile"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWhoCrush"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_referral_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Crushes Sent for you"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_notification_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Notifications"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llFollow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_share_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Follow Us "
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llAboutus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_about_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="About us"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_privacy_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_terms_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Terms &amp; conditions"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llContactus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_contact_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Report a Problem"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_hide_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Hide My Profile"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+                <Switch
+                    android:id="@+id/swHide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="0.4"></Switch>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_cancel_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:drawableRight="@drawable/ic_arrow_right_wc"
+                    android:gravity="center_vertical"
+                    android:text="Cancel My Account"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAutorenew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_subscription_setting"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Auto-Renewal"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+                <Switch
+                    android:id="@+id/swRenew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="0.4"
+                    android:checked="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/bg_gradient_horizontal_circle"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_logout"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:text="Logout"
+                    android:textColor="@color/grey_textDark"
+                    android:textSize="@dimen/font_size_medium"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

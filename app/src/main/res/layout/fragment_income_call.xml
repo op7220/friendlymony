@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentIncomeCall"
+    style="@style/MatchParent">
+
+    <LinearLayout
+        android:id="@+id/layout_info_about_call"
+        style="@style/MatchWidth"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_60sdp"
+        android:paddingRight="@dimen/_60sdp">
+
+        <ImageView
+            android:id="@+id/image_caller_avatar"
+            style="@style/CallerAvatar" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progress_bar_opponent_name"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/text_caller_name"
+                style="@style/WrapContent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/progress_bar_opponent_name"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/grey_textDark"
+                android:textSize="@dimen/font_size_medium"
+                tools:text="ijvan ivanovich" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/call_type"
+            style="@style/WrapContent"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_incoming_audio_call"
+            android:textColor="@color/grey_textDark"
+            android:textSize="@dimen/font_size_medium" />
+
+        <TextView
+            android:id="@+id/text_also_on_call"
+            style="@style/WrapContent"
+            android:layout_marginTop="48dp"
+            android:text="@string/also_on_call"
+            android:textColor="@color/grey_textDark"
+            android:textSize="@dimen/font_size_medium" />
+
+        <TextView
+            android:id="@+id/text_other_inc_users"
+            style="@style/WrapContent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/grey_textDark"
+            android:textSize="@dimen/font_size_medium"
+            tools:text="@string/user_list_on_call" />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/WrapContent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/image_button_reject_call"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/selector_call_end"
+            android:src="@drawable/ic_phone_hangup" />
+
+        <ImageButton
+            android:id="@+id/image_button_accept_call"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_toEndOf="@id/image_button_reject_call"
+            android:background="@drawable/selector_call_take"
+            android:src="@drawable/ic_call"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "70663589786",
+    "firebase_url": "https://friendlymony-1565701062273.firebaseio.com",
+    "project_id": "friendlymony-1565701062273",
+    "storage_bucket": "friendlymony-1565701062273.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70663589786:android:032fb792024fae17",
+        "android_client_info": {
+          "package_name": "com.nect.friendlymony"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70663589786-5fd2rrnp1qsm8eu1bftaohgouth9tj8s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nect.friendlymony",
+            "certificate_hash": "a9b9983019bf9da1ddd46bff20261dec99659ce9"
+          }
+        },
+        {
+          "client_id": "70663589786-g5kruljpv1v43bp443s5il3d068t7db0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nect.friendlymony",
+            "certificate_hash": "6f60d134c2da2850fec23ffb14206aeac1be77f8"
+          }
+        },
+        {
+          "client_id": "70663589786-o1dkh8chv08jfv9jtbdo4u43bloeqd55.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nect.friendlymony",
+            "certificate_hash": "c463a4236c923e524556aa043c2fa457b3b155df"
+          }
+        },
+        {
+          "client_id": "70663589786-n9qeb4i34mmcfe6s3435sladvor34h1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8bw72R-bXhXCfs9BGdyIh_Q-nGfmDpnw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70663589786-b6mlpkck6nd3l833q7qvvbnc9hs7sd8k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "70663589786-avc1r9d62odi7t0ket78mldq3hu49qga.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nectarbits.cxchatdemo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

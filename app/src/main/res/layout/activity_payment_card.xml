@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.PaymentCardActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:background="@color/pink" />
+
+    <TextView
+        android:id="@+id/ap_tvTotalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_56sdp"
+        android:text=""/>
+
+    <LinearLayout
+        android:id="@+id/ap_llCardData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ap_tvTotalAmount"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/apm_etNameOnCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:backgroundTint="@color/pink"
+            android:hint="@string/lbl_name_on_card"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:lines="1"
+            android:textColor="@color/grey_text"
+            android:textSize="@dimen/font_size_medium" />
+
+
+        <EditText
+            android:id="@+id/apm_etCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:backgroundTint="@color/pink"
+            android:hint="@string/lbl_credit_debit_card_number"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textColor="@color/grey_text"
+            android:textSize="@dimen/font_size_medium" />
+
+        <com.nect.friendlymony.CustomView.CardEditText
+            style="@style/bt_card_form_field"
+            android:id="@+id/bt_card_form_card_number"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/pink"
+            android:imeOptions="actionNext"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:hint="@string/lbl_credit_debit_card_number"
+            android:inputType="number"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/apm_etExpiryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/pink"
+                    android:digits="0123456789/"
+                    android:gravity="bottom"
+                    android:hint="@string/lbl_expiry_date"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textSize="@dimen/font_size_medium" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/apm_etCVV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/pink"
+                    android:gravity="bottom"
+                    android:hint="@string/lbl_cvv"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberPassword"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textSize="@dimen/font_size_medium"
+                    android:transformPivotY="@dimen/_10sdp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/bg_gradient_horizontal_rounded"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
